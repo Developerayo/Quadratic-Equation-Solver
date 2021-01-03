@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="liveInput2.css">
+  <title>Quadratic Equation Solver</title>
+</head>
+<body>
+  <div class="head-container">
+    <h1>Quadratic Equation Solver</h1>
+    <h2>(ax<sup>2</sup>+bx+c)</h2>
+  </div>
+  <div id="eqnOutput" onclick="copy()"><span id="eqnOutputA-container"><span id="eqnOutputA"></span>x<sup>2</sup></span><span id="eqnOutputB-container"><span id="eqnOutputB"></span>x</span><span id="eqnOutputC-container"><span id="eqnOutputC"></span></span></div>
+  <div class="container">
+    <div class="input-container">
+      <input type="number" name="a-value" id="input1" oninput="preSolveEqnA()" class="a-val" placeholder="a" autofocus>
+      <span id="x-coefficient">x<sup>2</sup>+</span>
+      <span id="checkLimitTooltipA"></span>
+    </div>
+    <!-- Another Block of Code -->
+    <div class="input-container">
+      <input type="number" name="b-value" id="input2" oninput="preSolveEqnB()" class="b-val" placeholder="b">
+      <span id="x-coefficient">x+</span>
+      <span id="checkLimitTooltipB"></span>
+    </div>
+    <!-- Another Block of Code -->
+    <div class="input-container">
+      <input type="number" name="c-value" id="input3" oninput="preSolveEqnC()" class="c-val" placeholder="c">
+      <span id="checkLimitTooltipC"></span>
+    </div>
+    <br>
+    <button id="button" type="submit" onclick="solveEqn()">Solve</button>
+    <div id="answer"></div>
+  </div>
+  <script src="liveInput2A.js"></script>
+  <script src="liveInput2B.js"></script>
+</body>
+</html>
