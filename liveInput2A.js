@@ -154,13 +154,14 @@ function preSolveEqnC() {
   }
 }
 // FUNTION TO COPY THE EQUATION STARTS
-function copy() {
-  var copyEqn = eqncontain;
-  copyEqn.select();
-  copyEqn.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-  alert("I have copied the text: " + copyEqn.innerHTML)
-}
+// function copy() {
+//   var copyEqn = eqncontain;
+//   copyEqn.select();
+//   copyEqn.setSelectionRange(0, 99999);
+//   document.execCommand("copy");
+//   alert("I have copied the text: " + copyEqn.innerHTML)
+// }
+
 var input = document.getElementById("input1");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
