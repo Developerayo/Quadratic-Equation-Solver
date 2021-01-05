@@ -9,8 +9,10 @@ function solveEqn() {
   var numeOne = -b + bacSqrt;
   var numeTwo = -b - bacSqrt;
   var deno = a * 2;
-  var xOne = numeOne/deno;
-  var xTwo = numeTwo/deno;
+  var xone = numeOne/deno;
+  var xtwo = numeTwo/deno;
+  var xOne = Math.round((xone) * 100) / 100;
+  var xTwo = Math.round((xtwo) * 100) / 100;
   var eqnAnswer = document.getElementById("answer");
   var checkCorrect = document.getElementById("checkLimitTooltipC");
   eqnAnswer.innerHTML = "x = " + xOne + " or x = " + xTwo;
