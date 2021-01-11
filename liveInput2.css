@@ -6,6 +6,21 @@
 body {
   text-align: center;
   padding-top: 1%;
+  margin-bottom: 34%;
+}
+button#refresh {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  border-radius: 50%;
+  padding: 0 0.74%;
+  background-color: orange;
+  color: #ffffff;
+}
+button#refresh:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  color: orange;
 }
 .head-container {
   background-color: orange;
@@ -60,7 +75,6 @@ sup {
 #checkLimitTooltipA, #checkLimitTooltipB, #checkLimitTooltipC, #checkCorrect {
   position: absolute;
   top: 110%;
-  /* left: 122%; */
   z-index: 999;
   width: 0;
   border-radius: 5px;
@@ -83,13 +97,141 @@ button {
   color: orange;
   transition: all 270ms ease-in-out;
 }
-button:hover {
+#button:hover {
   background-color: orange;
   color: white;
   box-shadow: 2px 2px 5px rgba(59, 57, 57, 0.4);
-  padding: 0 3%;
   font-size: 2.3em;
+  padding: 0 3%;
 }
 #answer {
   font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button#steps {
+  display: none;
+  position: absolute;
+  top: 28%;
+  right: 1%;
+}
+table.solvingSteps {
+  display: none;
+  background-color: #ffffff;
+  width: 31%;
+  margin-top: 1%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.6), -1px -1px 5px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 35%;
+  right: 1.5%;
+  overflow: hidden;
+}
+.stepping {
+  position: absolute;
+}
+td {
+  padding: 2% 3%;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 166, 0, 0.6);
+}
+td.stephd {
+  width: 50%;
+}
+div.steps {
+  display: inline;
+}
+hr {
+  border: 0.5px solid #000000;
+  width: 40%;
+  margin: 0 auto;
+}
+#steppers1 {
+  margin-left: -22%;
+}
+#steppers1 hr {
+  width: 60%;
+}
+#steppers4 {
+  margin-left: 2%;
+}
+#steppers4 hr {
+  width: 110%;
+}
+#steppers5 {
+  margin-left: -40%;
+}
+#steppers6 {
+  margin-left: -40%;
+}
+#steppers7 {
+  margin-left: -40%;
+}
+#steppers8a {
+  margin-left: 5%;
+}
+#steppers8a hr {
+  width: 130%;
+}
+#steppers8b {
+  margin-left: 20%;
+}
+#steppers8b hr {
+  width: 190%;
+}
+#steppers9a {
+  margin-left: 5%;
+}
+#steppers9a hr {
+  width: 130%;
+}
+#steppers9b {
+  margin-left: 20%;
+}
+#steppers9b hr {
+  width: 190%;
+}
+#step10bb td {
+  border: none;
+}
+#step10b {
+  margin-left: 40%;
+}
+#fulleqntt {
+  display: none;
+  position: absolute;
+  top: 52.5%;
+  right: 32%;
+  background-color: rgba(255, 153, 0, 0.733);
+  color: #ffffff;
+  border-left: 40px solid red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+  white-space: pre;
+  overflow: hidden;
+  animation-duration: 6000ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes displayTT {
+  0% {width: 0%;}
+  30% {width: 25%;}
+  50% {width: 25%;}
+  70% {width: 25%;}
+  100% {width: 0%;}
 }

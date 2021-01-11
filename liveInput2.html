@@ -7,6 +7,8 @@
   <title>Quadratic Equation Solver</title>
 </head>
 <body>
+  <button id="refresh" onclick="location.reload()" onmouseover="changeContent1()" onmouseout="changeContent2()" on>&#8635</button>
+
   <div class="head-container">
     <h1>Quadratic Equation Solver</h1>
     <h2>(ax<sup>2</sup>+bx+c)</h2>
@@ -30,10 +32,74 @@
       <span id="checkLimitTooltipC"></span>
     </div>
     <br>
-    <button id="button" type="submit" onclick="solveEqn()">Solve</button>
+    <button id="button" type="submit" onclick="solveEqn(); initSteps()">Solve</button>
     <div id="answer"></div>
+  </div>
+
+  <button id="steps" onclick="showSteps()" onmouseover="hovering()">Show Working Steps</button>
+  <div id="table-container" onmouseover="showTT()" onmouseout="hideTT()">
+    <div id="fulleqntt">
+      Step 2: Write down the 
+      full equation to get 
+      the values of a, b, and c
+    </div>
+    <table class="solvingSteps" id="solvingSteps">
+      <tr>
+        <td class="stephd">Step 1: </td>
+        <td colspan="1"><span id="x">x =</span></td>
+        <td colspan="3">
+          <div id="steppers1">
+            <div class="steps" id="step1">
+              -b&#177&#8730b<sup>2</sup>-4ac
+              <hr>
+              2a
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 2: </td><td colspan="4"><div class="steps" id="step2"><span id="fV-Container"><span id="firstVal"></span>x<sup>2</sup></span><span id="sV-container"><span id="secondVal"></span>x</span><span id="tV-container"><span id="thirdVal"></span></span></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 3: </td><td colspan="4"><div class="steps" id="step3"></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 4: </td><td colspan="1"><span id="x">x =</span></td><td colspan="3"><div id="steppers4"><div class="steps" id="step4"></div></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 5: </td><td colspan="1"><span id="x">x =</span></td><td colspan="3"><div id="steppers5"><div class="steps" id="step5"></div></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 6: </td><td colspan="1"><span id="x">x =</span></td><td colspan="3"><div id="steppers6"><div class="steps" id="step6"></div></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 7: </td><td colspan="1"><span id="x">x =</span></td><td colspan="3"><div id="steppers7"><div class="steps" id="step7"></div></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 8: </td>
+        <td colspan="1"><span id="x">x =</span></td>
+        <td colspan="1"><div id="steppers8a"><div class="steps" id="step8a"></div></div></td>
+        <td colspan="1"><span></span>or</td>
+        <td colspan="1"><div id="steppers8b"><div class="steps" id="step8b"></div></div></td>
+      </tr>
+      <tr>
+        <td class="stephd">Step 9: </td>
+        <td colspan="1"><span id="x">x =</span></td>
+        <td colspan="1"><div id="steppers9a"><div class="steps" id="step9a"></div></div></td>
+        <td colspan="1"><span></span>or</td>
+        <td colspan="1"><div id="steppers9b"><div class="steps" id="step9b"></div></div></td>
+      </tr>
+      <tr id="step10bb">
+        <td class="stephd">Step 10: </td>
+        <td colspan="1"><span id="x">x =</span></td>
+        <td colspan="1"><div class="steps" id="step10a"></div></td>
+        <td colspan="1"><span></span>or</td>
+        <td colspan="1"><div class="steps" id="step10b"></div></td>
+      </tr>
+    </table>
   </div>
   <script src="liveInput2A.js"></script>
   <script src="liveInput2B.js"></script>
+  <script src="liveInput2C.js"></script>
 </body>
 </html>
