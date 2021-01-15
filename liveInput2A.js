@@ -14,10 +14,11 @@ function preSolveEqnA() {
     document.getElementById("solvingSteps").style.display = "none";
     btn.innerHTML = "Show Working Steps";
     btn.style.backgroundColor = "white";
-    btn.style.color = "orange";
+    btn.style.color = "rgba(0, 255, 213, 0.808)";
     btn.style.boxShadow = "2px 2px 5px rgba(59, 57, 57, 0)";
     btn.style.padding = "0 1%";
     btn.style.fontSize = "2em";
+    document.getElementById("fulleqntt").style.display = "none";
   }
   let a = input1.style;
   a.width = "55px";
@@ -69,10 +70,11 @@ function preSolveEqnB() {
     document.getElementById("solvingSteps").style.display = "none";
     btn.innerHTML = "Show Working Steps";
     btn.style.backgroundColor = "white";
-    btn.style.color = "orange";
+    btn.style.color = "rgba(0, 255, 213, 0.808)";
     btn.style.boxShadow = "2px 2px 5px rgba(59, 57, 57, 0)";
     btn.style.padding = "0 1%";
     btn.style.fontSize = "2em";
+    document.getElementById("fulleqntt").style.display = "none";
   }
   input2.style.width = "55px";
   let num = input2.value;
@@ -133,10 +135,11 @@ function preSolveEqnC() {
     document.getElementById("solvingSteps").style.display = "none";
     btn.innerHTML = "Show Working Steps";
     btn.style.backgroundColor = "white";
-    btn.style.color = "orange";
+    btn.style.color = "rgba(0, 255, 213, 0.808)";
     btn.style.boxShadow = "2px 2px 5px rgba(59, 57, 57, 0)";
     btn.style.padding = "0 1%";
     btn.style.fontSize = "2em";
+    document.getElementById("fulleqntt").style.display = "none";
   }
   input3.style.width = "55px";
   let num = input3.value;
