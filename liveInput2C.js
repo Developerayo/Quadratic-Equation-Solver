@@ -5,14 +5,15 @@ function showSteps() {
     table.display = "none";
     btn.innerHTML = "Show Working Steps";
     btn.style.backgroundColor = "white";
-    btn.style.color = "orange";
+    btn.style.color = "rgba(0, 255, 213, 0.808)";
     btn.style.boxShadow = "2px 2px 5px rgba(59, 57, 57, 0)";
     btn.style.padding = "0 1%";
     btn.style.fontSize = "2em";
+    document.getElementById("fulleqntt").style.display = "none";
   } else {
     table.display = "inline-block";
     btn.innerHTML = "Hide Working Steps";
-    btn.style.backgroundColor = "orange";
+    btn.style.backgroundColor = "rgba(0, 255, 213, 0.808)";
     btn.style.color = "white";
     btn.style.boxShadow = "2px 2px 5px rgba(59, 57, 57, 0.4)";
     btn.style.padding = "0 3%";
@@ -38,6 +39,12 @@ function initSteps() {
   var xOne = numeOne/deno;
   var xTwo = numeTwo/deno;
   // Code for step2 starts
+  if (input2.value === "") {
+    var b = 0;
+  }
+  if (input3.value === "") {
+    var c = 0;
+  }
   document.getElementById("firstVal").innerHTML = a;
   document.getElementById("secondVal").innerHTML = "+" + b;
   document.getElementById("thirdVal").innerHTML = "+" + c;

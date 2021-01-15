@@ -14,16 +14,16 @@ button#refresh {
   left: 4%;
   border-radius: 50%;
   padding: 0 0.74%;
-  background-color: orange;
+  background-color: rgba(0, 255, 213, 0.808);
   color: #ffffff;
 }
 button#refresh:hover {
   transform: scale(1.2);
   background-color: #ffffff;
-  color: orange;
+  color: rgba(0, 255, 213, 0.808);
 }
 .head-container {
-  background-color: orange;
+  background-color: rgba(0, 255, 213, 0.808);
   margin-bottom: 2%;
   padding: 2%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -59,7 +59,7 @@ input {
   width: 35px;
   height: 30px;
   outline: none;
-  border: 2px solid orange;
+  border: 2px solid rgba(0, 255, 213, 0.808);
   border-radius: 5px;
   font-size: 1.3em;
 }
@@ -79,7 +79,7 @@ sup {
   width: 0;
   border-radius: 5px;
   white-space: nowrap;
-  background-color: orange;
+  background-color: rgba(0, 255, 213, 0.808);
   overflow: hidden;
   opacity: 0.9;
   text-align: center;
@@ -92,13 +92,13 @@ button {
   margin-top: 1%;
   border-radius: 10px;
   outline: none;
-  border: 2px double orange;
+  border: 2px double rgba(0, 255, 213, 0.808);
   background-color: white;
-  color: orange;
+  color: rgba(0, 255, 213, 0.808);
   transition: all 270ms ease-in-out;
 }
 #button:hover {
-  background-color: orange;
+  background-color: rgba(0, 255, 213, 0.808);
   color: white;
   box-shadow: 2px 2px 5px rgba(59, 57, 57, 0.4);
   font-size: 2.3em;
@@ -149,7 +149,7 @@ table.solvingSteps {
 td {
   padding: 2% 3%;
   white-space: nowrap;
-  border-bottom: 1px solid rgba(255, 166, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 255, 213, 0.808);
 }
 td.stephd {
   width: 50%;
@@ -218,11 +218,13 @@ hr {
   position: absolute;
   top: 52.5%;
   right: 32%;
-  background-color: rgba(255, 153, 0, 0.733);
+  background-color: rgba(34, 226, 194, 0.808);
   color: #ffffff;
-  border-left: 40px solid red;
+  border-left: 25px solid rgb(9, 255, 0);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
+  height: 14%;
+  padding-top: 0.5%;
   white-space: pre;
   overflow: hidden;
   animation-duration: 6000ms;
@@ -230,8 +232,8 @@ hr {
 }
 @keyframes displayTT {
   0% {width: 0%;}
-  30% {width: 25%;}
-  50% {width: 25%;}
-  70% {width: 25%;}
+  30% {width: 20%;}
+  50% {width: 20%;}
+  70% {width: 20%;}
   100% {width: 0%;}
 }
